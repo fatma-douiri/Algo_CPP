@@ -1,0 +1,19 @@
+ALGORITHM algorithm_CPP
+VAR
+    nbr_char : INTEGER :=0;
+    nbr_words : INTEGER :=0;
+    nbr_vowels : INTEGER :=0;
+    c : char :='';
+BEGIN
+    while ( c<>'.') do 
+        read (c);
+        nbr_char:= nbr_char+1
+          IF (c = ' ') THEN nbr_words :=nbr_words +1; nbr_char:= nbr_char - 1 ;
+          IF (c='a'OU c='e'c='y'c='u'c='i'c='o') THEN  nbr_vowels := nbr_vowels+1;
+    END_WHILE
+    
+    whrite ("lenght =" nbr_char);
+    whrite ("number of words ="nbr_words);
+    whrite ("number of vowels ="nbr_vowels); 
+
+END
